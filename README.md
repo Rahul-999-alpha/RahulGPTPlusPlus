@@ -22,18 +22,7 @@ Designed for demonstration within **Risk & Compliance departments** (e.g. IARC),
 
 ## 📂 Project Structure
 
-RBI_RAG_DEMO/
-│
-├── models/
-│ └── mistral/ # Local Mistral GGUF model (e.g. mistral-7b-instruct-v0.1.Q4_K_M.gguf)
-│
-├── faiss_index/ # FAISS vector DB files (auto-created)
-├── vectorstore/ # (Legacy) Optional for Chroma-based experiments
-├── hash_store.json # Tracks processed PDFs to avoid duplicates
-│
-├── QA_bot.py # Main Gradio app (local RAG chatbot)
-├── requirements.txt # Dependencies
-└── README.md # You're reading it!
+<pre> RBI_RAG_DEMO/ ├── models/ │ └── mistral/ │ └── mistral-7b-instruct-v0.1.Q4_K_M.gguf # Local LLM model file │ ├── faiss_index/ # FAISS vector database files │ ├── index.faiss │ └── index.pkl │ ├── vectorstore/ # (Optional) Legacy folder for Chroma (if used) │ ├── hash_store.json # JSON to track hashes of processed PDFs ├── QA_bot.py # Main Gradio-based chatbot script ├── requirements.txt # Python dependencies └── README.md # Project documentation </pre>
 
 ---
 
